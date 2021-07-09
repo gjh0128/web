@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>WEB-HTML-js</title>   
+</head>
+<body>
+    <h1><a href="index.html">WEB</a></h1>
+    <input type="button" value="black" onclick="
+    if(document.querySelector('body').dataset.mode === 'day'){
+    document.querySelector('body').style.backgroundColor='black' ;
+    document.querySelector('body').style.color = 'white' ;
+    document.querySelector('body').dataset.mode = 'night' ;
+    this.value = 'day' } 
+    else {
+    document.querySelector('body').style.backgroundColor='white' ;
+    document.querySelector('body').style.color = 'black' ; 
+    document.querySelector('body').dataset.mode = 'day' ;
+    this.value='night'}">
+        <ul>
+            <li><a href="index.html" style="color:red;text-decoration: underline;">1.HTML</a></li>
+            <li><a href="css.html" class="saw">2.CSS</a></li>
+            <li><a href="js.html">3.JavaScript</a></li>
+        </ul>
+            <h2>HTML</h2>
+            <i><strong>하이퍼 텍스트 마크 업 언어</strong></i>
+            <p style="margin-top: 30px;">
+            1980 년 CERN 의 계약자 인 물리학 자 Tim Berners-Lee 는 CERN 연구원이 문서를 사용하고 공유 할 수있는 시스템 인 INQUIRE를 제안하고 프로토 타입을 제작했습니다 .
+            </p>       
+            <a href="https://en.wikipedia.org/wiki/HTML" style="color:blue;">상세정보</a>
+</body>
+</html>

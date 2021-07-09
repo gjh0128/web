@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WEB-CSS</title>
+    <link href="web.css" rel="stylesheet" />
+</head>
+<body>
+    <h1><a href="file:///Users/kimjihwan/Desktop/Life%20coding/index.html">WEB</a></h1>
+    <div id="button">
+        <input type="button" value="black" onclick="
+        var target = document.querySelector('body')
+        if(this.value === 'night'){
+        target.style.backgroundColor = 'black' ;
+        target.style.color = 'white' ;
+        this.value = 'day' 
+    
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length) {
+            alist[i].style.color = 'powderblue';
+            i = i + 1;
+    }} 
+        else {
+        target.style.backgroundColor = 'white' ;
+        target.style.color = 'black' ;
+        this.value='night'
+    
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length) {
+            alist[i].style.color = 'blue';
+            i = i + 1
+        }}">
+        </div>
+    <div id=grid>
+        <ul>
+            <li><a href="index.html">1.HTML</a></li>
+            <li><a href="css.html" style="color:red;text-decoration: underline">2.CSS</a></li>
+            <li><a href="js.html">3.JavaScript</a></li>
+        </ul>
+        <div id="article">
+        <h2>CSS</h2>
+        <i><strong>캐스 케이 딩 스타일 시트</strong></i>
+        <p style="margin-top: 30px;">
+            CSS는 레이아웃 , 색상 및 글꼴을 포함하여 프레젠테이션과 콘텐츠를 분리 할 수 ​​있도록 설계되었습니다 .
+        </p>
+        <a id ="last a" href="https://en.wikipedia.org/wiki/CSS" style="color:blue;">상세정보</a>
+        </div>
+    </div>
+</body>
+</html>

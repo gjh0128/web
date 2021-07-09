@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WEB-HTML</title>
+    <link href="web.css" rel="stylesheet" />    
+</head>
+<body>
+    <h1><a href="index.html">WEB</a></h1>
+    <div id="button">
+    <input type="button" value="black" onclick="
+    var target = document.querySelector('body')
+    if(this.value === 'night'){
+    target.style.backgroundColor = 'black' ;
+    target.style.color = 'white' ;
+    this.value = 'day' 
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length) {
+        alist[i].style.color = 'powderblue';
+        i = i + 1;
+}} 
+    else {
+    target.style.backgroundColor = 'white' ;
+    target.style.color = 'black' ;
+    this.value='night'
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length) {
+        alist[i].style.color = 'blue';
+        i = i + 1
+    }}">
+    </div>
+    <div id="grid">
+        <ul>
+            <li><a href="index.html" style="color:red;text-decoration: underline;">1.HTML</a></li>
+            <li><a href="css.html" class="saw">2.CSS</a></li>
+            <li><a href="js.html">3.JavaScript</a></li>
+        </ul>
+        <div id="article">
+            <h2>HTML</h2>
+            <i><strong>하이퍼 텍스트 마크 업 언어</strong></i>
+            <p style="margin-top: 30px;">
+            1980 년 CERN 의 계약자 인 물리학 자 Tim Berners-Lee 는 CERN 연구원이 문서를 사용하고 공유 할 수있는 시스템 인 INQUIRE를 제안하고 프로토 타입을 제작했습니다 .
+            </p>       
+            <a id ="last a" href="https://en.wikipedia.org/wiki/HTML" style="color:blue;">상세정보</a>
+        </div>
+    </div>
+</body>
+</html>

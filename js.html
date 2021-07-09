@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WEB-JS</title>
+    <link href="web.css" rel="stylesheet" />
+</head>
+<body>
+    <h1><a href="file:///Users/kimjihwan/Desktop/Life%20coding/index.html">WEB</a></h1>
+    <div id="button">
+        <input type="button" value="black" onclick="
+        var target = document.querySelector('body')
+        if(this.value === 'night'){
+        target.style.backgroundColor = 'black' ;
+        target.style.color = 'white' ;
+        this.value = 'day' 
+    
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length) {
+            alist[i].style.color = 'powderblue';
+            i = i + 1;
+    }} 
+        else {
+        target.style.backgroundColor = 'white' ;
+        target.style.color = 'black' ;
+        this.value='night'
+    
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length) {
+            alist[i].style.color = 'blue';
+            i = i + 1
+        }}">
+        </div>
+    <div id="grid">
+        <ul>
+            <li><a href="index.html">1.HTML</a></li>
+            <li><a href="css.html">2.CSS</a></li>
+            <li><a href="js.html" style="color:red;text-decoration: underline">3.JavaScript</a></li>
+        </ul>
+        <div id="article">
+            <h2>JavaScript</h2>
+            <i><strong>자바 스크립트</strong></i>
+            <p style="margin-top: 30px;">
+                HTML 및 CSS 와 함께 JavaScript는 World Wide Web 의 핵심 기술 중 하나입니다 . 웹 사이트의 97 % 이상 이 웹 페이지 동작을 위해 클라이언트 측 에서 사용 하며 종종 타사 라이브러리를 통합 합니다.</p>
+            <a id ="last a" href="https://en.wikipedia.org/wiki/JavaScript" style="color:blue;">상세정보</a>
+        </div>
+    </div>
+</body>
+</html>
